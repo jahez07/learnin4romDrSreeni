@@ -70,7 +70,7 @@ Remembering information for long periods of time is intrinsic to LSTM.<br>
 <img src="rnnLogic.png" alt="RNN" width="600"/> <br>
 An RNN has one **tanh** and the previous cell information is passed into the next cell.
 
-**Intricasies of LSTM** <br>
+## **Introducing LSTM**
 <img src="lstmLogic.webp" alt="LSTM" width="600"/> <br>
 
 Cell of an LSTM is much more complex than an RNN cell. It has 2 tanh and 3 sigmoid. <br>
@@ -81,3 +81,13 @@ The first thing inside the LSTM cell is the
 2. **input gate**: controls the amount of information passes into the cell state.
 3. **output gate**: controls the amount of information passed to the next cell.
 
+Information flows through the path, and Gates let information through the cell state.<br>
+**Why Sigmoid?** <br>
+Sigmoid can output 0 to 1, it can be used to forget or remember the information. 
+* 0: Forget everything
+* 1: Let everything from last cell through.
+
+**Why tanh** <br>
+To overcome the vanishing gradient problem. tanh's second derivative can sustain for a long range before going to zero. Also good for adding weight.
+
+##
