@@ -31,4 +31,11 @@ Autocorrelation measures the similarity between a time sereies and a lagged vers
 * **Negative Autocorrelation**: When high values tend to be followed  by low values and vice-versa (e.g., mean-reverting processes).
 
 #### **Tools for Analysis**
-* **Autocorrelation Function (ACF)**: A common tool used to calculate and visualize the correlation coefficients across different lags, helping to identify repeating patterns or seasonalities. 
+* **Autocorrelation Function (ACF)**: A common tool used to calculate and visualize the correlation coefficients across different lags, helping to identify repeating patterns or seasonalities.
+
+
+In time series data, we compare one column to itself and not other features, and that is called autocorrelation, for which we need **RNN** Simple example, I have a table with two columns 'Day' & 'Food'. What food I eat today depends on what food what I had in the past and not on what day it is. This shows that the data point is compaired to the same column and not to the other column, for that is that usual case of Normal Nueral Networks. 
+
+## **Unrolling an RNN**
+RNNs are "unrolled" programmatically during training and prediction.
+![Alt text](/RNN.png "RNN")
