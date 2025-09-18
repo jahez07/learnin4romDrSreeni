@@ -67,11 +67,11 @@ Designed to overcome limitations of RNNs such as:
 Remembering information for long periods of time is intrinsic to LSTM.<br>
 
 **Whats happening inside an RNN** <br>
-<img src="rnnLogic.png" alt="RNN" width="600"/> <br>
+<img src="assets/rnnLogic.png" alt="RNN" width="600"/> <br>
 An RNN has one **tanh** and the previous cell information is passed into the next cell.
 
 ## **Introducing LSTM**
-<img src="lstmLogic.webp" alt="LSTM" width="600"/> <br>
+<img src="assets/lstmLogic.webp" alt="LSTM" width="600"/> <br>
 
 Cell of an LSTM is much more complex than an RNN cell. It has 2 tanh and 3 sigmoid. <br>
 Cell state : the information is passed through it to the next, state pf the cell.
@@ -90,4 +90,6 @@ Sigmoid can output 0 to 1, it can be used to forget or remember the information.
 **Why tanh** <br>
 To overcome the vanishing gradient problem. tanh's second derivative can sustain for a long range before going to zero. Also good for adding weight.
 
-##
+### **Forget gate** : How much of the past to forget.
+<img src="assets/forgetGate.png" alt="forge gate" width="400"/> <br>
+<img src="assets/fGformula.png" alt="forge gate formula" width="400"/> <br>
