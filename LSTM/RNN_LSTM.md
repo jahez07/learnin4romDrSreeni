@@ -37,5 +37,14 @@ Autocorrelation measures the similarity between a time sereies and a lagged vers
 In time series data, we compare one column to itself and not other features, and that is called autocorrelation, for which we need **RNN** Simple example, I have a table with two columns 'Day' & 'Food'. What food I eat today depends on what food what I had in the past and not on what day it is. This shows that the data point is compaired to the same column and not to the other column, for that is that usual case of Normal Nueral Networks. 
 
 ## **Unrolling an RNN**
-RNNs are "unrolled" programmatically during training and prediction.
-![Alt text](/RNN.png "RNN")
+RNNs are "unrolled" programmatically during training and prediction.<br>
+![Alt text](rnn.png "RNN")
+RNN is like multiple copies of the same network where each copy passes information to the other. The list like structure makes them appropriate for sequential data. (e.g. time series, natural langauge, etc.)
+
+## **Types of RNN**
+* **one to one**: Image classification ( regular nueral networking )
+* **one to many**: Image captioning (explaining a scene, eg: "a cat infront of a car")
+* **many to one**: Sentiment Analysis (bunch of tweets is passed as input and model outputs the sentiment)
+* **many to many**: Language Translation ( English -> German )
+
+## **Problem with RNN**
