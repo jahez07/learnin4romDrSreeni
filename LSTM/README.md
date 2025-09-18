@@ -115,4 +115,4 @@ $C_t$ : tanh layer gives weights to the values to be added to the state.
 <img src="assets/oG.png" alt="output gate" width="600"/> <br>
 
 $$ O_t = σ \left( W_o.\left[ h_{t-1}, x_t \right] + b_o \right) $$
-$$ h_t = O_t * tanh \left( C_t \right)
+$$ h_t = O_t * tanh \left( C_t \right) $$
