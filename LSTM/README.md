@@ -95,6 +95,8 @@ To overcome the vanishing gradient problem. tanh's second derivative can sustain
 
 **Forget gate formula:** <br>
 
-$$ ft = (Wf.[ht-1, xt] + bf) $$
+$ ft = (Wf.[ht-1, xt] + bf) $
 
+<!--
 $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
+-->
