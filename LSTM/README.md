@@ -95,8 +95,13 @@ To overcome the vanishing gradient problem. tanh's second derivative can sustain
 
 **Forget gate formula:** <br>
 
-$ ft = (Wf.[ht-1, xt] + bf) $
+$$ ft = (Wf.[ht-1, xt] + bf) $$
 
 <!--
 $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 -->
+
+Outputs a number between 0 and 1 for each number in the cell state. 0 to completely forget and 1 to keep all information.
+
+## **Input gate**: What new information will be stored in the cell state.
+<img src="assets/iG.png" alt="input gate" width="500" /> <br>
