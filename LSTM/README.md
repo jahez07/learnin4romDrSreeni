@@ -91,7 +91,7 @@ Sigmoid can output 0 to 1, it can be used to forget or remember the information.
 To overcome the vanishing gradient problem. tanh's second derivative can sustain for a long range before going to zero. Also good for adding weight.
 
 ### **Forget gate** : How much of the past to forget.
-<img src="assets/fG.png" alt="forge gate" width="400" height="300"/> <br>
+<img src="assets/fG.png" alt="forge gate" width="500"/> <br>
 
 **Forget gate formula:** <br>
 
@@ -102,5 +102,8 @@ $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
 Outputs a number between 0 and 1 for each number in the cell state. 0 to completely forget and 1 to keep all information.
 
-## **Input gate**: What new information will be stored in the cell state.
+### **Input gate**: What new information will be stored in the cell state.
 <img src="assets/iG.png" alt="input gate" width="500" /> <br>
+
+$it$ : Sigmoid layer decides which values are updated. <br>
+$Ct$ : tanh layer gives weights to the values to be added to the state. 
