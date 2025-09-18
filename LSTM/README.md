@@ -106,7 +106,13 @@ Outputs a number between 0 and 1 for each number in the cell state. 0 to complet
 <img src="assets/iG.png" alt="input gate" width="600" /> <br>
 
 $$ i_t = σ\left( W_i.\left[h_t, x_t \right] + b_i \right) $$
-$$ C_t^~ = tanh \left( W_c.\left[h_{t-1}, x_t \right] + b_C \right) $$
+$$ C_t^~ = tanh \left( W_C.\left[h_{t-1}, x_t \right] + b_C \right) $$
 
 $i_t$ : Sigmoid layer decides which values are updated. <br>
-$Ct$ : tanh layer gives weights to the values to be added to the state. 
+$C_t$ : tanh layer gives weights to the values to be added to the state. 
+
+### Output gate: Decide what part of current cell makes to the output
+<img src="assets/oG.png" alt="output gate" width="600"/> <br>
+
+$$ O_t = σ \left( W_o.\left[ h_{t-1}, x_t \right] + b_o \right) $$
+$$ h_t = O_t * tanh \left( C_t \right)
