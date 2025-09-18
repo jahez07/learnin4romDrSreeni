@@ -105,5 +105,5 @@ Outputs a number between 0 and 1 for each number in the cell state. 0 to complet
 ### **Input gate**: What new information will be stored in the cell state.
 <img src="assets/iG.png" alt="input gate" width="500" /> <br>
 
-$it$ : Sigmoid layer decides which values are updated. <br>
+$iˇt$ : Sigmoid layer decides which values are updated. <br>
 $Ct$ : tanh layer gives weights to the values to be added to the state. 
