@@ -93,7 +93,7 @@ To overcome the vanishing gradient problem. tanh's second derivative can sustain
 ### **Forget gate** : How much of the past to forget.
 <img src="assets/fG.png" alt="forge gate" width="600"/> <br>
 
-**Forget gate formula:** <br>
+$$ f_t = σ  \left( W_f.\left[h_{t-1}, x_t \right] + b_f \right) $$
 
 <!--
 $$ ft = (Wf.[ht-1, xt] + bf) $$
@@ -106,6 +106,7 @@ Outputs a number between 0 and 1 for each number in the cell state. 0 to complet
 <img src="assets/iG.png" alt="input gate" width="600" /> <br>
 
 $$ i_t = σ\left( W_i.\left[h_t, x_t \right] + b_i \right) $$
+$$ C_t^~ = tanh \left( W_c.\left[h_{t-1}, x_t \right] + b_C \right) $$
 
 $i_t$ : Sigmoid layer decides which values are updated. <br>
 $Ct$ : tanh layer gives weights to the values to be added to the state. 
