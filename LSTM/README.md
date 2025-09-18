@@ -94,6 +94,7 @@ To overcome the vanishing gradient problem. tanh's second derivative can sustain
 <img src="assets/forgetGate.png" alt="forge gate" width="400" height="300"/> <br>
 
 **Forget gate formula:** <br>
-$$ ƒt = (Wf.[ht-1, xt] + bf) $$
+
+$$ ft = (Wf.[ht-1, xt] + bf) $$
 
 $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
