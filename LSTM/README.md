@@ -116,3 +116,13 @@ $C_t$ : tanh layer gives weights to the values to be added to the state.
 
 $$ O_t = σ \left( W_o.\left[ h_{t-1}, x_t \right] + b_o \right) $$
 $$ h_t = O_t * tanh \left( C_t \right) $$
+
+$O_t$ : Sigmoid layer decides which part of cell state is selected for output.
+$h_t$ : tanh layer gives weights to the values (-1 to 1)
+
+## LSTM in keras
+'''py
+model = Sequential()
+
+model.add(LSTM(
+'''
