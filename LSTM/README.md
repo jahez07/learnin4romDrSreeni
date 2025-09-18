@@ -91,5 +91,5 @@ Sigmoid can output 0 to 1, it can be used to forget or remember the information.
 To overcome the vanishing gradient problem. tanh's second derivative can sustain for a long range before going to zero. Also good for adding weight.
 
 ### **Forget gate** : How much of the past to forget.
-<img src="assets/forgetGate.png" alt="forge gate" width="400"/> <br>
+<img src="assets/forgetGate.png" alt="forge gate" width="400" height="100"/> <br>
 <img src="assets/fGformula.png" alt="forge gate formula" width="400"/> <br>
