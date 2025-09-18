@@ -66,12 +66,12 @@ Designed to overcome limitations of RNNs such as:
 * Difficulty to process very long sequences
 Remembering information for long periods of time is intrinsic to LSTM.<br>
 
-**Whats happening inside an RNN**
-<img src="rnnLogic.png" alt="RNN" width="200"/> <br>
+**Whats happening inside an RNN** <br>
+<img src="rnnLogic.png" alt="RNN" width="500"/> <br>
 An RNN has one **tanh** and the previous cell information is passed into the next cell.
 
 **Intricasies of LSTM** <br>
-<img src="lstmLogic.webp" alt="LSTM" width="200"/> <br>
+<img src="lstmLogic.webp" alt="LSTM" width="400"/> <br>
 
 Cell of an LSTM is much more complex than an RNN cell. It has 2 tanh and 3 sigmoid. <br>
 Cell state : the information is passed through it to the next, state pf the cell.
