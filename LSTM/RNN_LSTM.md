@@ -67,7 +67,17 @@ Designed to overcome limitations of RNNs such as:
 Remembering information for long periods of time is intrinsic to LSTM.<br>
 
 **Whats happening inside an RNN**
-![RNN](rnnLogic.png "insideRNN") <br>
+<img src="rnnLogic.png" alt="RNN" width="200"/> <br>
+An RNN has one **tanh** and the previous cell information is passed into the next cell.
 
 **Intricasies of LSTM** <br>
-![LSTM](lstmLogic.webp "insideLSTM")
+<img src="lstmLogic.webp" alt="LSTM" width="200"/> <br>
+
+Cell of an LSTM is much more complex than an RNN cell. It has 2 tanh and 3 sigmoid. <br>
+Cell state : the information is passed through it to the next, state pf the cell.
+To this cell state we are supplying all other values. One value is multiplied another value is added, as you can in the diagram.
+The first thing inside the LSTM cell is the 
+1. **forget gate** : in simple terms it controls what is let into the cell state. ( it helps us with what information to forget and what information to rememeber )
+2. **input gate**: controls the amount of information passes into the cell state.
+3. **output gate**: controls the amount of information passed to the next cell.
+
