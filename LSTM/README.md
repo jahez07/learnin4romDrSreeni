@@ -121,7 +121,7 @@ $O_t$ : Sigmoid layer decides which part of cell state is selected for output.
 $h_t$ : tanh layer gives weights to the values (-1 to 1)
 
 ## LSTM in keras
-'''py
+'''python
 model = Sequential()
 
 model.add(LSTM(
