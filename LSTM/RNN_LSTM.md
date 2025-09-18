@@ -38,7 +38,7 @@ In time series data, we compare one column to itself and not other features, and
 
 ## **Unrolling an RNN**
 RNNs are "unrolled" programmatically during training and prediction.<br>
-![Alt text](rnn.png "RNN")
+![Alt text](rnn.png "RNN")<br>
 RNN is like multiple copies of the same network where each copy passes information to the other. The list like structure makes them appropriate for sequential data. (e.g. time series, natural langauge, etc.)
 
 ## **Types of RNN**
@@ -48,3 +48,23 @@ RNN is like multiple copies of the same network where each copy passes informati
 * **many to many**: Language Translation ( English -> German )
 
 ## **Problem with RNN**
+RNNs are good with short sequences such as:
+*The sky is _________ (Answer: Blue)*
+
+But ....
+*This is the 10th day of wildfires in the San Francisco bay area.* <br>
+*There is smoke everywhere, it is snowing ash and the sky is_____.* <br>
+*(Correct answer: Red)*
+
+RNNs are not good at remembering the context of a sentence from a previous sentence. 
+
+**LSTM is a special kind of RNN** <br>
+LSTM - Long Short-Term Memory <br>
+Designed to overcome limitations of RNNs such as:
+* Gradient vanishing and exploding.
+* Complex training.
+* Difficulty to process very long sequences
+Remembering information for long periods of time is intrinsic to LSTM.<br>
+
+**Whats happening inside an RNN**
+![RNN](rnnLogic.png "insideRNN")
