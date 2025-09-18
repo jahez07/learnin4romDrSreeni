@@ -48,7 +48,7 @@ RNN is like multiple copies of the same network where each copy passes informati
 * **many to many**: Language Translation ( English -> German )
 
 ## **Problem with RNN**
-RNNs are good with short sequences such as:
+RNNs are good with short sequences such as:<br>
 *The sky is _________ (Answer: Blue)*
 
 But ....
@@ -67,4 +67,7 @@ Designed to overcome limitations of RNNs such as:
 Remembering information for long periods of time is intrinsic to LSTM.<br>
 
 **Whats happening inside an RNN**
-![RNN](rnnLogic.png "insideRNN")
+![RNN](rnnLogic.png "insideRNN") <br>
+
+**Intricasies of LSTM** <br>
+![LSTM](lstmLogic.webp "insideLSTM")
