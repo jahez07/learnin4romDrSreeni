@@ -1,5 +1,6 @@
 # virtual environments
 .learninAnomalyDetection
+.kaggleLearn
 
 # ipynb
 .ipynb_checkpoints
